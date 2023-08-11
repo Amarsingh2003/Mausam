@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mausam</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="websiteLogo.png" type="image/x-icon">
+</head>
+<body>
+
+    <div class="container">
+        <div class="navContainer">
+            <nav>
+                <div class="navBar">
+                    
+                    
+                        <a href="#">
+                            <div class="logoDiv">
+                            <img src="websiteLogo.png" alt="">
+                            <p >Mausam</p>
+                            </div>
+                        </a>
+                   
+                        <a href="#"><p>Login</p></a>
+                </div>
+            </nav>
+        </div>
+
+
+        <main>
+                <div class="mainContainer">
+                    
+                        <form action="" id="searchForm">
+                            <div class="searchBar">
+                                <input type="text" placeholder="Enter the city name...." id="searchInput">
+                                <button type="submit" id="searchButton">Search</button>
+                            </div>
+                       
+                        </form>
+                        
+                 
+    
+    
+                    <div class="weatherContainer">
+                        
+                        
+                        <div id="location">
+                           <img src="locationLogo.png" alt="">
+                            <h3 id="locationCity">Varanasi</h3>
+                        </div>
+                        <div id="basicWeatherDetail">
+                            
+                            <div class="mainCard" id="tempCard">
+                                <h3 id="dateValue"></h3>
+                                <div class="valueDiv">
+                                    <h1 id="tempValue"></h1>
+                                    <span> &#8451; </span>
+                                </div>
+                                <img src="" alt="" id="imageClimate">
+                                <h3 id="climateType"></h3>
+                            </div>
+                            <div class="otherCards">
+                            <div class="otherCard" id="feelLikeCard">
+                                <img src="fee_like_logo.png" alt="feel like">
+                                <div class="valueDiv">
+                                    <p id="feels_likeValue"></p>
+                                    <span> &#8451; </span>
+                                </div>
+                                
+                                <h3>feel like</h3>
+                            </div>
+                            <div class="otherCard" id="humidityCard">
+                                <img src="humidity_logo.avif" alt="humidity">
+                                <div class="valueDiv">
+                                    <p id="humidityValue"></p>
+                                    <span>%</span>
+                                </div>
+                                
+                                <h3 >humidity</h3>
+                            </div>
+                            <div class="otherCard" id="windSpeedCard">
+                                <img src="wind_speed_logo.png" alt="windspeed" >
+                               <div class="valueDiv">
+                                <p id="wind_speedValue"></p>
+                                <span>km/hr</span>
+                               </div>
+                                
+                                <h3 >wind speed</h3>
+                            </div>
+                            </div>
+                        </div>
+                        
+                        
+
+                        <div id="moreWeatherDetail">
+                            <div class="buttonDiv">
+                                <button id="moreDetailButton">Show More Details
+                                    <div id='arrow' class="upArrow"></div>
+                                </button>
+                                
+                            </div>
+                            <div id="moreWeatherDetailBox" class="hideDiv" >
+                                <div class="moreWeatherDetailCard">
+                                    
+                                    <div id="windDegree" class="moreWeatherDetailSubCard">
+                                        <img src="wind_degree_logo.png" alt="wind degree">
+                                        <p>wind degree</p>
+                                        <div class="valueDiv">
+                                            <p id="wind_degreesValue"></p>
+                                            <span>deg</span>
+                                        </div>
+                                        
+                                    </div>
+                                    <div id="cloudPct"  class="moreWeatherDetailSubCard">
+                                        <img src="cloud_pct_logo.png" alt="cloud pct">
+                                        <p>cloud pct</p>
+                                        <div class="valueDiv">
+                                            <p id="cloud_pctValue"></p>
+                                            <span>%</span>
+                                        </div>
+                                        
+                                    </div>
+                                    <div id="sunset" class="moreWeatherDetailSubCard">
+                                        <img src="sunset_logo.png" alt="sun set">
+                                        <p>sunset</p>
+                                        <div class="valueDiv">
+                                            <p id="sunsetValue"></p>
+                                            <span></span>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                               
+                                <div class="moreWeatherDetailCard">
+                                    <div id="sunrise" class="moreWeatherDetailSubCard">
+                                        <img src="sunrise_logo.png" alt="sun rise">
+                                        <p>sunrise</p>
+                                        <div class="ValueDiv">
+                                            <p id="sunriseValue"></p>
+                                            <span></span>
+                                        </div>
+                                        
+                                    </div>
+                                    <div id="maxtemp" class="moreWeatherDetailSubCard">
+                                        <img src="maxtemp_logo.png" alt="max temp">
+                                        <p>max temp</p>
+                                        <div class="valueDiv">
+
+                                            <p id="max_tempValue"></p>
+                                            <span>&#8451;</span>
+                                        </div>
+                                    </div>
+                                    <div id="mintemp" class="moreWeatherDetailSubCard">
+                                        <img src="mintemp_logo.png" alt="min temp">
+                                        <p>min temp</p>
+                                        <div class="valueDiv">
+                                            <p id="min_tempValue"></p>
+                                            <span>&#8451;</span>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+        </main>
+
+        <footer>
+            <div class="footerContainer">
+                <p>
+                    Copyright &copy; Mausam Pvt Ltd 2023 All Right Reserved
+                </p>
+            </div>
+        </footer>
+
+    </div>
+
+
+
+
+
+<script src="script.js">
+</script>
+    
+</body>
+</html>

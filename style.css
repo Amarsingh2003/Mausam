@@ -1,0 +1,382 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: black;
+    font-size: large;
+    text-align: center;
+}
+p{
+    font-size: larger;
+}
+body{
+    background-image: linear-gradient(145deg, #dff5ff 40%,rgb(139, 216, 241) 50%);
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 3rem;
+   
+    
+    
+
+}
+.navBar a{
+    text-decoration: none;
+    
+}
+.navBar img{
+    width: 4rem;
+    height: 4rem;
+}
+a p{
+    font-size: larger;
+}
+
+.logoDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.searchBar{
+    padding: 1rem 3rem;
+    display: flex;
+    justify-content: center;
+   
+}
+#searchForm{
+    width: 100%;
+}
+#searchInput{
+    width: 50%;
+    padding: .5rem 3rem;
+    font-size: large;
+    border-radius: 1rem;
+    margin-left: 1rem;
+    
+    
+}
+#searchButton{
+    
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    margin-left: 1rem;
+    background-color: grey;
+    color: white;
+}
+
+.weatherContainer{
+
+    height: 100%;
+    margin: 1rem 3rem;
+    padding: 2rem;
+    background-image: linear-gradient(145deg, #dff5ff 40%,rgb(164, 224, 245) 50%);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    box-shadow: .2rem .2rem .5rem .2rem rgb(4, 150, 142),inset .2rem .2rem .5rem .2rem black;
+    
+}
+
+#location{
+    margin: 0 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .5rem;
+}
+#location img{
+    width: 2rem;
+    height: 2rem;
+}
+
+#basicWeatherDetail{
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+   gap: 2rem;
+  
+}
+
+
+#moreWeatherDetail{
+  
+    border-radius: 1rem;
+    
+    margin: 3%;
+    
+
+
+}
+.footerContainer p{
+ 
+    text-align: center;
+    padding: 1rem ;
+}
+.mainCard{
+    flex-shrink: 0;
+    background-color:none;
+    height: 25rem;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+
+}
+#dateValue{
+    text-align: center;
+}
+.mainCard img{
+   
+    height: 60%;
+    width: 80%;
+}
+.otherCards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 60%;
+    
+   
+
+}
+.otherCard{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    width: 30%;
+    height: 22rem;
+    border-radius: 2rem;
+    transition: transform 0.3s ease;
+    box-shadow: .2rem .2rem .5rem .2rem rgb(4, 150, 142);
+   
+    
+}
+.otherCard img{
+    width: 80%;
+    height: 70%;
+}
+
+.otherCard:hover{
+    transform: scale(1.1);
+    box-shadow: .2rem .2rem .5rem .2rem rgb(8, 13, 255);
+}
+
+
+
+
+
+
+.buttonDiv{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.downArrow{
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid white;
+    font-size: 0;
+    line-height: 0;
+    
+}
+.upArrow{
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid white;
+    font-size: 0;
+    line-height: 0;
+
+}
+#moreDetailButton{
+    background-color: black;
+    width: 100%;
+    padding: .5rem;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: .5rem;
+
+   
+}
+
+.showDiv{
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+background-color: chocolate;
+border-radius: 0rem 0rem .5rem .5rem;
+background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+.hideDiv{
+    display: none;
+}
+
+.valueDiv{
+    display: flex;
+    flex-direction: row;
+    gap: 1px;
+}
+.moreWeatherDetailCard{
+margin: 1rem 0rem;
+padding: 1rem;
+background-color:white;
+width: 40%;
+height: 30rem;
+display:flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+border-radius: 1rem;
+
+}
+.moreWeatherDetailSubCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 95%;
+    height: 30%;
+    gap: 1rem;
+    background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+    transition: transform 0.3s ease;
+    border-radius: 1rem;
+}
+.moreWeatherDetailSubCard img{
+    width: 10rem;
+    height: 4rem;
+    
+}
+.moreWeatherDetailSubCard:hover{
+    transform: scale(1.05);
+    box-shadow: .2rem .2rem .5rem .2rem rgb(8, 13, 255);
+    opacity: 0.7;
+}
+@media (max-width:1500px){
+    #basicWeatherDetail{
+        flex-direction: column;
+    }
+    .mainCard{
+        align-self: center;
+        width: 70%;
+    }
+    .otherCards{
+        width: 100%;
+    }
+    .otherCard{
+        width: 30%;
+    }
+    .moreWeatherDetailCard{
+        width: 70%;
+        
+    }
+    .showDiv{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+@media(max-width:1000px){
+    .mainCard{
+        align-self: center;
+        width: 90%;
+    }
+    .otherCards{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        
+
+
+    }
+   
+    .otherCard{
+        align-self: center;
+        width: 60%;
+        
+       
+    }
+ 
+    .showDiv{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .moreWeatherDetailCard{
+        width: 90%;
+       
+       
+    }
+    
+    .moreWeatherDetailSubCard {
+       padding: 5px;
+        
+    }
+}
+@media(max-width:600px){
+    .mainCard{
+        align-self: center;
+        width: 100%;
+    }
+    .otherCard{
+        width: 90%;
+        
+    }
+    .otherCards{
+        gap: 2rem;
+    }
+    
+    #location{
+        justify-content: center;
+    }
+    .moreWeatherDetailCard{
+        width: 95%;
+        height: 35rem;
+       
+       
+    }
+    .navBar{
+        padding: 2% 1%;
+        padding-right: 5%;
+    
+    }
+    #location img{
+        width: 1.5rem;
+        height: 2rem;
+    }
+    .moreWeatherDetailSubCard {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 0rem;
+        
+    }
+    .moreWeatherDetailCard img{
+        padding:5px 5px;
+        width: 80%;
+    }
+}
